@@ -6,7 +6,11 @@ export const StyledContainerHome = styled.main`
   height: fit-content;
 
   margin: 0 auto;
-  border: 1px solid white;
+  /* border: 1px solid white; */
+
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
 `;
 
 export const StyledInitialInfos = styled.section`
@@ -93,6 +97,52 @@ export const StyledInitialInfos = styled.section`
     div:nth-child(1) {
     }
     div:nth-child(2) {
+    }
+  }
+`;
+
+export const StyledProjects = styled.section`
+  width: 100%;
+  height: fit-content;
+
+  /* border: 1px solid blue; */
+
+  display: flex;
+  flex-direction: column;
+
+  div:nth-child(1) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    h2 {
+      font-weight: 500;
+      font-size: 32px;
+      line-height: 42px;
+
+      color: var(--color-gray-0);
+      span {
+        color: var(--color-primary);
+      }
+    }
+
+    span:nth-child(2) {
+      display: none;
+      width: 40%;
+      height: 1px;
+      background-color: var(--color-primary);
+
+      @media (min-width: 600px) {
+        display: block;
+      }
+    }
+
+    a {
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 21px;
+
+      color: var(--color-gray-0);
     }
   }
 `;

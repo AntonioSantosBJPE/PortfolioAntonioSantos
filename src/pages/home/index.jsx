@@ -1,7 +1,14 @@
-import { StyledContainerHome, StyledInitialInfos } from "./style";
+import {
+  StyledContainerHome,
+  StyledInitialInfos,
+  StyledProjects,
+} from "./style";
 import imgPerfil from "../../assets/my-photo-perfil.png";
 import imgGeo1 from "../../assets/geometrics1.svg";
 import imgGeo2 from "../../assets/geometrics2.svg";
+import { Link } from "react-router-dom";
+
+const caracterSpecialProjects = "Ver todos ~~>";
 
 export const HomePage = () => {
   return (
@@ -25,6 +32,19 @@ export const HomePage = () => {
           </figure>
         </div>
       </StyledInitialInfos>
+
+      <StyledProjects>
+        <div>
+          <h2>
+            <span>#</span>Projetos
+          </h2>
+          <span></span>
+          <Link to="/projects">{caracterSpecialProjects}</Link>
+        </div>
+        <div>
+          <ul></ul>
+        </div>
+      </StyledProjects>
     </StyledContainerHome>
   );
 };

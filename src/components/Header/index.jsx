@@ -31,13 +31,13 @@ export const Header = () => {
             <span>#</span>Home
           </Link>
           <Link to="/projects" onClick={closeMenu}>
-            <span>#</span>Projects
+            <span>#</span>Projetos
           </Link>
           <Link to="/about" onClick={closeMenu}>
-            <span>#</span>About
+            <span>#</span>Sobre
           </Link>
           <Link to="/contact" onClick={closeMenu}>
-            <span>#</span>Contact
+            <span>#</span>Contato
           </Link>
         </nav>
         <Sling
