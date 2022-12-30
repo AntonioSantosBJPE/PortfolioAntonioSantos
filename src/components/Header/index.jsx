@@ -1,15 +1,57 @@
 import { Link, Outlet } from "react-router-dom";
+import { StyledMenu, StyledContainerOutlat } from "./style";
+import { Sling } from "hamburger-react";
+import logo from "../../assets/logo.svg";
+import { useState, useEffect } from "react";
+
 export const Header = () => {
+  const [menuBurgerIsOpen, setMenuBurgerIsOpen] = useState(false);
+
+  const closeMenu = () => {
+    setMenuBurgerIsOpen(false);
+  };
+  const resizeWindow = () => {
+    closeMenu();
+  };
+
+  useEffect(() => {
+    window.addEventListener("resize", resizeWindow);
+
+    return () => {
+      window.removeEventListener("resize", resizeWindow);
+    };
+  }, []);
+
   return (
     <>
-      <nav>
-        <Link to="/">Home</Link>
-        <Link to="/projects">Projects</Link>
-        <Link to="/about">About</Link>
-        <Link to="/contact">Contact</Link>
-      </nav>
-
-      <Outlet />
+      <StyledMenu isOpen={menuBurgerIsOpen}>
+        <img src={logo} alt="" />
+        <nav>
+          <Link to="/" onClick={closeMenu}>
+            <span>#</span>Home
+          </Link>
+          <Link to="/projects" onClick={closeMenu}>
+            <span>#</span>Projects
+          </Link>
+          <Link to="/about" onClick={closeMenu}>
+            <span>#</span>About
+          </Link>
+          <Link to="/contact" onClick={closeMenu}>
+            <span>#</span>Contact
+          </Link>
+        </nav>
+        <Sling
+          label="Show menu"
+          hideOutline={false}
+          rounded
+          color="#ABB2BF"
+          toggled={menuBurgerIsOpen}
+          toggle={setMenuBurgerIsOpen}
+        />
+      </StyledMenu>
+      <StyledContainerOutlat>
+        <Outlet />
+      </StyledContainerOutlat>
     </>
   );
 };
