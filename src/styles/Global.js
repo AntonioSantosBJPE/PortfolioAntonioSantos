@@ -33,7 +33,7 @@ export const GlobalStyle = createGlobalStyle`
 }
 
 body{
-  background-color: var(--color-gray-2);;
+  background-color: var(--color-gray-2);
 }
 
 
