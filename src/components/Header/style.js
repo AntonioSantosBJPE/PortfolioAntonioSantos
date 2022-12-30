@@ -36,6 +36,7 @@ export const StyledMenu = styled.header`
 
     position: absolute;
     top: 60px;
+    z-index: 10000;
     /* border: 1px solid white; */
     padding: 80px 16px;
     a {
@@ -92,5 +93,6 @@ export const StyledContainerOutlat = styled.div`
   height: 60px;
   padding: 0 16px;
   margin: 0 auto;
+  margin-top: 20px;
   /* border: 1px solid white; */
 `;
