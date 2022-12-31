@@ -139,8 +139,8 @@ export const HomePage = () => {
               em contato!
             </p>
             <LinkNavigation
-              name="Mais informações <~>"
-              to="/about"
+              name="Entre em contato!"
+              to="/contact"
               variant="InternalPrimary"
             />
           </div>
