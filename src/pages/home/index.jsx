@@ -2,10 +2,8 @@ import {
   StyledContainerHome,
   StyledInitialInfos,
   StyledProjects,
+  StyledSkills,
 } from "./style";
-import imgPerfil from "../../assets/my-photo-perfil.png";
-import imgGeo1 from "../../assets/geometrics1.svg";
-import imgGeo2 from "../../assets/geometrics2.svg";
 import { Link } from "react-router-dom";
 import { infosProjectsHomePage } from "../../services/dataBase.js";
 import { CardProject } from "../../components/CardProject";
@@ -26,9 +24,12 @@ export const HomePage = () => {
 
         <div>
           <figure>
-            <img src={imgPerfil} alt="imagem perfil Antonio Santos" />
-            <img src={imgGeo1} alt="" />
-            <img src={imgGeo2} alt="" />
+            <img
+              src="../../../public/my-photo-perfil.png"
+              alt="imagem perfil Antonio Santos"
+            />
+            <img src="../../../public/geometrics1.svg" alt="" />
+            <img src="../../../public/geometrics2.svg" alt="" />
           </figure>
         </div>
       </StyledInitialInfos>
@@ -49,6 +50,55 @@ export const HomePage = () => {
           </ul>
         </div>
       </StyledProjects>
+
+      <StyledSkills>
+        <div>
+          <h2>
+            <span>#</span>Habilidades
+          </h2>
+          <span></span>
+        </div>
+
+        <div>
+          <figure>
+            <img src="../../../public/geometricsSkills.svg" alt="" />
+          </figure>
+          <ul>
+            <li>
+              <div>
+                <h3>Linguagens</h3>
+              </div>
+              <div>
+                <h4>JavaScript, TypeScript</h4>
+              </div>
+            </li>
+            <li>
+              <div>
+                <h3>Frameworks</h3>
+              </div>
+              <div>
+                <h4>React</h4>
+              </div>
+            </li>
+            <li>
+              <div>
+                <h3>Outros</h3>
+              </div>
+              <div>
+                <h4>HTML, CSS, Styled-components</h4>
+              </div>
+            </li>
+            <li>
+              <div>
+                <h3>Ferramentas</h3>
+              </div>
+              <div>
+                <h4>VSCode, Figma, Git, GitHub</h4>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </StyledSkills>
     </StyledContainerHome>
   );
 };

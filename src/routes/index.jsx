@@ -1,4 +1,4 @@
-import { Route, Routes } from "react-router-dom";
+import { Route, Routes, Navigate } from "react-router-dom";
 import { HomePage } from "../pages/home";
 import { ProjectsPage } from "../pages/projects";
 import { AboutPage } from "../pages/about";
@@ -14,7 +14,7 @@ export const RoutesApp = () => {
           <Route path="about" element={<AboutPage />} />
           <Route path="contact" element={<ContactPage />} />
         </Route>
-        <Route path="*" element={<Header />} />
+        <Route path="*" element={<Navigate to="/" />} />
       </Routes>
     </>
   );
