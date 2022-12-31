@@ -7,7 +7,6 @@ export const StyledMenu = styled.header`
   max-height: 60px;
 
   margin: 0 auto;
-  /* border: 1px solid white; */
 
   display: flex;
   align-items: center;
@@ -23,6 +22,7 @@ export const StyledMenu = styled.header`
 
   div:nth-child(3) {
     margin-right: 6px;
+    z-index: 300;
   }
   nav {
     display: flex;
@@ -36,21 +36,9 @@ export const StyledMenu = styled.header`
 
     position: absolute;
     top: 60px;
-    /* border: 1px solid white; */
+    z-index: 200;
+
     padding: 80px 16px;
-    a {
-      font-weight: 500;
-      font-size: 32px;
-      line-height: 42px;
-      color: var(--color-gray-1);
-      transition: all 1s ease-in-out;
-      &:hover {
-        color: var(--color-gray-0);
-      }
-      span {
-        color: var(--color-primary);
-      }
-    }
 
     transition: all 0.8s ease-in-out;
 
@@ -92,5 +80,5 @@ export const StyledContainerOutlat = styled.div`
   height: 60px;
   padding: 0 16px;
   margin: 0 auto;
-  /* border: 1px solid white; */
+  margin-top: 20px;
 `;
