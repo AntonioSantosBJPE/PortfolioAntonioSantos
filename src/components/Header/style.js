@@ -23,6 +23,7 @@ export const StyledMenu = styled.header`
 
   div:nth-child(3) {
     margin-right: 6px;
+    z-index: 300;
   }
   nav {
     display: flex;
@@ -36,7 +37,7 @@ export const StyledMenu = styled.header`
 
     position: absolute;
     top: 60px;
-    z-index: 10000;
+    z-index: 200;
     /* border: 1px solid white; */
     padding: 80px 16px;
     a {

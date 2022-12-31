@@ -66,7 +66,7 @@ export const StyledInitialInfos = styled.section`
 
         position: absolute;
         bottom: 0;
-        z-index: 1000;
+        z-index: 100;
       }
 
       img:nth-child(2) {
