@@ -24,6 +24,11 @@ export const HomePage = () => {
             Sou desenvolvedor Front-end com foco em ReactJs, monitor e estudante
             do curso de Desenvolvimento Web Full Stack da Kenzie Academy Brazil.
           </h3>
+          <LinkNavigation
+            name="Entre em contato!"
+            to="/contact"
+            variant="InternalPrimary"
+          />
         </div>
 
         <div>

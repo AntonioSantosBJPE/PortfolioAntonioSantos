@@ -46,6 +46,10 @@ export const StyledInitialInfos = styled.section`
 
       color: var(--color-gray-1);
     }
+
+    a {
+      width: 200px;
+    }
   }
 
   div:nth-child(2) {
