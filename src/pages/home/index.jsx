@@ -4,6 +4,7 @@ import {
   StyledProjects,
   StyledSkills,
   StyledABout,
+  StyledContact,
 } from "./style";
 import { infosProjectsHomePage, infosSkills } from "../../services/dataBase.js";
 import { CardProject } from "../../components/CardProject";
@@ -119,6 +120,44 @@ export const HomePage = () => {
           </figure>
         </div>
       </StyledABout>
+
+      <StyledContact>
+        <div>
+          <h2>
+            <span>#</span>Contato
+          </h2>
+          <span></span>
+        </div>
+
+        <div>
+          <div>
+            <p>
+              Estou a procura de uma oportunidade como desenvolvedor Front-end
+              júnior, ou como freelance. Caso esteja interessado no meu
+              trabalho, ou tenha alguma dúvida sobre mim, não hesite em entrar
+              em contato!
+            </p>
+            <LinkNavigation
+              name="Mais informações <~>"
+              to="/about"
+              variant="InternalPrimary"
+            />
+          </div>
+          <div>
+            <div>
+              <h4>Entre em contato por:</h4>
+              <span>
+                <img src="../../../public/email.png" alt="imagem email" />
+                <h5>netoifpe@gmail.com</h5>
+              </span>
+              <span>
+                <img src="../../../public/whatsapp.png" alt="imagem email" />
+                <h5>(81) 9 9359-0468</h5>
+              </span>
+            </div>
+          </div>
+        </div>
+      </StyledContact>
     </StyledContainerHome>
   );
 };
