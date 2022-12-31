@@ -33,6 +33,19 @@ export const StyledLinkExternal = styled.a`
           
           `;
     }
+
+    if (variant === "ExternalIcon") {
+      return `
+            border: none;
+            height: 40px;
+            width: 40px;
+            padding: 0;
+            img,i{
+              height: 100%;
+              width: 100%;
+            }
+          `;
+    }
   }}
 `;
 

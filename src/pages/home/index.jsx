@@ -10,6 +10,7 @@ import { infosProjectsHomePage, infosSkills } from "../../services/dataBase.js";
 import { CardProject } from "../../components/CardProject";
 import { CardSkills } from "../../components/CardSkills";
 import { LinkNavigation } from "../../components/LinkNavigation";
+import { Footer } from "../../components/Footer";
 
 export const HomePage = () => {
   return (
@@ -158,6 +159,8 @@ export const HomePage = () => {
           </div>
         </div>
       </StyledContact>
+
+      <Footer />
     </StyledContainerHome>
   );
 };

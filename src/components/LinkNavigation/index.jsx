@@ -25,6 +25,14 @@ export const LinkNavigation = ({
       );
       break;
 
+    case "ExternalIcon":
+      return (
+        <StyledLinkExternal href={to} variant={variant} target={target}>
+          {children}
+        </StyledLinkExternal>
+      );
+      break;
+
     case "InternalPrimary":
       return (
         <StyledLinkInternal to={to} variant={variant}>
