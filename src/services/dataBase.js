@@ -62,3 +62,22 @@ export const infosProjectsHomePage = [
   //   linkGithub: "https://github.com/AntonioSantosBJPE/SlideTestemunhos",
   // },
 ];
+
+export const infosSkills = [
+  {
+    title: "Linguagens",
+    skills: ["JavaScript", "TypeScript"],
+  },
+  {
+    title: "Frameworks",
+    skills: ["React"],
+  },
+  {
+    title: "Outros",
+    skills: ["HTML", "CSS", "Styled-components"],
+  },
+  {
+    title: "Ferramentas",
+    skills: ["VSCode", "Figma", "Git", "GitHub"],
+  },
+];

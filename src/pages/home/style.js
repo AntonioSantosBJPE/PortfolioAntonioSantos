@@ -238,7 +238,7 @@ export const StyledSkills = styled.section`
         margin-right: 50px;
       }
 
-      li {
+      /* li {
         min-width: 170px;
         max-width: 200px;
         height: fit-content;
@@ -273,7 +273,7 @@ export const StyledSkills = styled.section`
             color: var(--color-gray-1);
           }
         }
-      }
+      } */
     }
 
     @media (min-width: 768px) {

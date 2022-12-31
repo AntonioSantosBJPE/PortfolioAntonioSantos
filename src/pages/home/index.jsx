@@ -5,8 +5,9 @@ import {
   StyledSkills,
 } from "./style";
 import { Link } from "react-router-dom";
-import { infosProjectsHomePage } from "../../services/dataBase.js";
+import { infosProjectsHomePage, infosSkills } from "../../services/dataBase.js";
 import { CardProject } from "../../components/CardProject";
+import { CardSkills } from "../../components/CardSkills";
 
 export const HomePage = () => {
   return (
@@ -64,7 +65,10 @@ export const HomePage = () => {
             <img src="../../../public/geometricsSkills.svg" alt="" />
           </figure>
           <ul>
-            <li>
+            {infosSkills.map((infos, index) => {
+              return <CardSkills key={index} infos={infos} />;
+            })}
+            {/* <li>
               <div>
                 <h3>Linguagens</h3>
               </div>
@@ -95,7 +99,7 @@ export const HomePage = () => {
               <div>
                 <h4>VSCode, Figma, Git, GitHub</h4>
               </div>
-            </li>
+            </li> */}
           </ul>
         </div>
       </StyledSkills>
