@@ -145,4 +145,17 @@ export const StyledProjects = styled.section`
       color: var(--color-gray-0);
     }
   }
+
+  div:nth-child(2) {
+    ul {
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      gap: 25px;
+
+      overflow-x: auto;
+
+      margin-top: 40px;
+    }
+  }
 `;

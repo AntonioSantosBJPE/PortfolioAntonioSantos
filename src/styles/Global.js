@@ -19,10 +19,12 @@ export const GlobalStyle = createGlobalStyle`
   
 :root {
   --color-primary:#C778DD;
-  --color-primary-hover: #ae3bce;
+  /* --color-primary-hover: #ae3bce; */
+  --color-primary-hover: rgba(199, 120, 221, 0.2);
   --color-primary-disableb: #7b2492;
   --color-gray-0: #FFFFFF;
   --color-gray-1: #ABB2BF;
+  --color-gray-1-hover: rgba(171, 178, 191, 0.2);
   --color-gray-2: #282C33 ;
   --color-gray-3: #000000;
   --color-sucess: #168821;

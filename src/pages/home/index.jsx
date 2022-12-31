@@ -7,8 +7,8 @@ import imgPerfil from "../../assets/my-photo-perfil.png";
 import imgGeo1 from "../../assets/geometrics1.svg";
 import imgGeo2 from "../../assets/geometrics2.svg";
 import { Link } from "react-router-dom";
-
-const caracterSpecialProjects = "Ver todos ~~>";
+import { infosProjectsHomePage } from "../../services/dataBase.js";
+import { CardProject } from "../../components/CardProject";
 
 export const HomePage = () => {
   return (
@@ -39,10 +39,14 @@ export const HomePage = () => {
             <span>#</span>Projetos
           </h2>
           <span></span>
-          <Link to="/projects">{caracterSpecialProjects}</Link>
+          <Link to="/projects">{"Todos ~~>"}</Link>
         </div>
         <div>
-          <ul></ul>
+          <ul>
+            {infosProjectsHomePage.map((infos, index) => {
+              return <CardProject key={index} infos={infos} />;
+            })}
+          </ul>
         </div>
       </StyledProjects>
     </StyledContainerHome>

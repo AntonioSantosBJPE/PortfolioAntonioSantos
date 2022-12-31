@@ -1,8 +1,8 @@
 export const infosProjectsHomePage = [
   {
     name: "Kenzie Hub",
-    tags: ["ReactJs", "HTML", "Styled-components", "API"],
-    imgCapa: "../../assets/capaKenzieHub.png",
+    tags: ["ReactJs", "Styled-components", "HTML", "API"],
+    imgCapa: "../../../public/capaKenzieHub.png",
     linkSite:
       "https://react-entrega-kenzie-hub-complete-antonio-santos-bjpe.vercel.app/login",
     linkGithub: "https://github.com/AntonioSantosBJPE/Kenzie-Hub",
@@ -11,8 +11,8 @@ export const infosProjectsHomePage = [
   },
   {
     name: "Hamburgueria",
-    tags: ["ReactJs", "HTML", "Styled-components", "API"],
-    imgCapa: "../../assets/capaBburguerkenzie.png",
+    tags: ["ReactJs", "Styled-components", "HTML", "API"],
+    imgCapa: "../../../public/capaBburguerkenzie.png",
     linkSite:
       "https://react-entrega-template-hamburgueria-da-kenzie-antoniosantosbjpe.vercel.app/",
     linkGithub: "https://github.com/AntonioSantosBJPE/Hamburgueria-da-Kenzie",
