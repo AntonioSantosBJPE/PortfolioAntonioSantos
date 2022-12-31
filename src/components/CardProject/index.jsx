@@ -1,3 +1,4 @@
+import { LinkNavigation } from "../LinkNavigation";
 import { StyleCard } from "./style";
 
 export const CardProject = ({ infos }) => {
@@ -14,12 +15,18 @@ export const CardProject = ({ infos }) => {
         <p>{infos.description}</p>
       </div>
       <div>
-        <a href={infos.linkSite} target="_blank">
-          {"Live <~>"}
-        </a>
-        <a href={infos.linkGithub} target="_blank">
-          {"GitHub >="}
-        </a>
+        <LinkNavigation
+          name={"Live <~>"}
+          to={infos.linkSite}
+          target="_blank"
+          variant={"ExternalPrimary"}
+        />
+        <LinkNavigation
+          name={"GitHub >="}
+          to={infos.linkGithub}
+          target="_blank"
+          variant={"ExternalGray1"}
+        />
       </div>
     </StyleCard>
   );

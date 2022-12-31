@@ -8,6 +8,7 @@ import { Link } from "react-router-dom";
 import { infosProjectsHomePage, infosSkills } from "../../services/dataBase.js";
 import { CardProject } from "../../components/CardProject";
 import { CardSkills } from "../../components/CardSkills";
+import { LinkNavigation } from "../../components/LinkNavigation";
 
 export const HomePage = () => {
   return (
@@ -41,7 +42,12 @@ export const HomePage = () => {
             <span>#</span>Projetos
           </h2>
           <span></span>
-          <Link to="/projects">{"Todos ~~>"}</Link>
+          {/* <Link to="/projects">{"Todos ~~>"}</Link> */}
+          <LinkNavigation
+            name={"Todos ~~>"}
+            to="/projects"
+            variant="InternalNoBoardGrey0"
+          />
         </div>
         <div>
           <ul>
@@ -68,38 +74,6 @@ export const HomePage = () => {
             {infosSkills.map((infos, index) => {
               return <CardSkills key={index} infos={infos} />;
             })}
-            {/* <li>
-              <div>
-                <h3>Linguagens</h3>
-              </div>
-              <div>
-                <h4>JavaScript, TypeScript</h4>
-              </div>
-            </li>
-            <li>
-              <div>
-                <h3>Frameworks</h3>
-              </div>
-              <div>
-                <h4>React</h4>
-              </div>
-            </li>
-            <li>
-              <div>
-                <h3>Outros</h3>
-              </div>
-              <div>
-                <h4>HTML, CSS, Styled-components</h4>
-              </div>
-            </li>
-            <li>
-              <div>
-                <h3>Ferramentas</h3>
-              </div>
-              <div>
-                <h4>VSCode, Figma, Git, GitHub</h4>
-              </div>
-            </li> */}
           </ul>
         </div>
       </StyledSkills>

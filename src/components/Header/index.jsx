@@ -1,8 +1,9 @@
-import { Link, Outlet } from "react-router-dom";
+import { Outlet } from "react-router-dom";
 import { StyledMenu, StyledContainerOutlat } from "./style";
 import { Sling } from "hamburger-react";
 import logo from "../../assets/logo.svg";
 import { useState, useEffect } from "react";
+import { LinkNavigation } from "../LinkNavigation";
 
 export const Header = () => {
   const [menuBurgerIsOpen, setMenuBurgerIsOpen] = useState(false);
@@ -27,18 +28,34 @@ export const Header = () => {
       <StyledMenu isOpen={menuBurgerIsOpen}>
         <img src={logo} alt="" />
         <nav>
-          <Link to="/" onClick={closeMenu}>
+          <LinkNavigation
+            to="/"
+            variant="InternalNoBoardGrey1"
+            onClick={closeMenu}
+          >
             <span>#</span>Home
-          </Link>
-          <Link to="/projects" onClick={closeMenu}>
+          </LinkNavigation>
+          <LinkNavigation
+            to="/projects"
+            variant="InternalNoBoardGrey1"
+            onClick={closeMenu}
+          >
             <span>#</span>Projetos
-          </Link>
-          <Link to="/about" onClick={closeMenu}>
+          </LinkNavigation>
+          <LinkNavigation
+            to="/about"
+            variant="InternalNoBoardGrey1"
+            onClick={closeMenu}
+          >
             <span>#</span>Sobre
-          </Link>
-          <Link to="/contact" onClick={closeMenu}>
+          </LinkNavigation>
+          <LinkNavigation
+            to="/contact"
+            variant="InternalNoBoardGrey1"
+            onClick={closeMenu}
+          >
             <span>#</span>Contato
-          </Link>
+          </LinkNavigation>
         </nav>
         <Sling
           label="Show menu"

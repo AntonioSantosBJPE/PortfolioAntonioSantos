@@ -87,39 +87,5 @@ export const StyleCard = styled.li`
 
     display: flex;
     gap: 15px;
-
-    a:nth-child(1) {
-      height: 40px;
-      padding: 8px 16px;
-
-      border: 1px solid var(--color-primary);
-
-      font-weight: 500;
-      font-size: 16px;
-      line-height: 21px;
-
-      color: var(--color-gray-0);
-
-      &:hover {
-        background-color: var(--color-primary-hover);
-      }
-    }
-
-    a:nth-child(2) {
-      height: 40px;
-      padding: 8px 16px;
-
-      border: 1px solid var(--color-gray-1);
-
-      font-weight: 500;
-      font-size: 16px;
-      line-height: 21px;
-
-      color: var(--color-gray-1);
-
-      &:hover {
-        background-color: var(--color-gray-1-hover);
-      }
-    }
   }
 `;
