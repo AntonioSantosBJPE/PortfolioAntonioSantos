@@ -34,11 +34,11 @@ export const HomePage = () => {
         <div>
           <figure>
             <img
-              src="../../../public/my-photo-perfil.png"
+              src="/my-photo-perfil.png"
               alt="imagem perfil Antonio Santos"
             />
-            <img src="../../../public/geometrics1.svg" alt="" />
-            <img src="../../../public/geometrics2.svg" alt="" />
+            <img src="/geometrics1.svg" alt="" />
+            <img src="/geometrics2.svg" alt="" />
           </figure>
         </div>
       </StyledInitialInfos>
@@ -75,7 +75,7 @@ export const HomePage = () => {
 
         <div>
           <figure>
-            <img src="../../../public/geometricsSkills.svg" alt="" />
+            <img src="/geometricsSkills.svg" alt="" />
           </figure>
           <ul>
             {infosSkills.map((infos, index) => {
@@ -122,7 +122,7 @@ export const HomePage = () => {
             />
           </div>
           <figure>
-            <img src="../../../public/geometricsSkills.svg" alt="" />
+            <img src="/geometricsSkills.svg" alt="" />
           </figure>
         </div>
       </StyledABout>
@@ -153,11 +153,11 @@ export const HomePage = () => {
             <div>
               <h4>Entre em contato por:</h4>
               <span>
-                <img src="../../../public/email.png" alt="imagem email" />
+                <img src="/public/email.png" alt="imagem email" />
                 <h5>netoifpe@gmail.com</h5>
               </span>
               <span>
-                <img src="../../../public/whatsapp.png" alt="imagem email" />
+                <img src="/public/whatsapp.png" alt="imagem email" />
                 <h5>(81) 9 9359-0468</h5>
               </span>
             </div>

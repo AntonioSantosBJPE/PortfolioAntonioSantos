@@ -6,7 +6,7 @@ export const Footer = () => {
     <StyledFooter>
       <div>
         <div>
-          <img src="../../../public/logo.svg" alt="" />
+          <img src="/logo.svg" alt="" />
           <h4>Desenvolvedor Front-end</h4>
           <h4>netoifpe@gmail.com</h4>
         </div>
@@ -18,14 +18,14 @@ export const Footer = () => {
               to="https://github.com/AntonioSantosBJPE"
               target="_blank"
             >
-              <img src="../../../public/github.png" alt="imagem github" />
+              <img src="/github.png" alt="imagem github" />
             </LinkNavigation>
             <LinkNavigation
               variant="ExternalIcon"
               to="https://www.linkedin.com/in/antonio-santos-b934a479/"
               target="_blank"
             >
-              <img src="../../../public/linkedin.png" alt="imagem linkedin" />
+              <img src="/linkedin.png" alt="imagem linkedin" />
             </LinkNavigation>
           </div>
         </div>
