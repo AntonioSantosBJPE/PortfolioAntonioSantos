@@ -19,9 +19,10 @@ export const SectionContact = () => {
             ou tenha alguma dúvida sobre mim, não hesite em entrar em contato!
           </p>
           <LinkNavigation
-            name="Baixar Currículo"
-            to="/public/curriculo.pdf"
+            name="Ver Currículo"
+            to="https://drive.google.com/file/d/1JCOnWjfxY3uSk95cP9HdAXKj7qlCo9Ks/view?usp=share_link"
             variant="ExternalPrimaryDownload"
+            target="_blank"
           />
         </div>
         <div>
