@@ -6,7 +6,7 @@ export const Footer = () => {
     <StyledFooter>
       <div>
         <div>
-          <img src="/logo.svg" alt="" />
+          <img src="/logo.svg" alt="logo Antonio Santos" />
           <h4>Desenvolvedor Front-end</h4>
           <h4>netoifpe@gmail.com</h4>
         </div>

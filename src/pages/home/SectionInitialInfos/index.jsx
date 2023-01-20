@@ -14,8 +14,8 @@ export const SectionInitialInfos = () => {
         </h3>
         <LinkNavigation
           name="Entre em contato!"
-          to="/contact"
-          variant="InternalPrimary"
+          to="#section__contact"
+          variant="ExternalPrimary"
         />
       </div>
 

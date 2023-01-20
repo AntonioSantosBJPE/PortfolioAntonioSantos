@@ -46,6 +46,18 @@ export const StyledLinkExternal = styled.a`
             }
           `;
     }
+
+    if (variant === "ExternalPrimaryDownload") {
+      return `
+            border: 1px solid var(--color-primary);
+            color: var(--color-gray-0);
+
+            &:hover {
+                background-color: var(--color-primary-hover);
+            }
+          
+          `;
+    }
   }}
 `;
 

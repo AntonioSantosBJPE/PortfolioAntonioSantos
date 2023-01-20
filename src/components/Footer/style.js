@@ -19,6 +19,11 @@ export const StyledFooter = styled.footer`
 
     display: flex;
     flex-direction: column;
+    align-items: center;
+
+    @media (min-width: 425px) {
+      align-items: baseline;
+    }
 
     div:nth-child(1) {
       width: 100%;

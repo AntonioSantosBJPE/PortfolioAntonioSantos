@@ -33,6 +33,20 @@ export const LinkNavigation = ({
       );
       break;
 
+    case "ExternalPrimaryDownload":
+      return (
+        <StyledLinkExternal
+          href={to}
+          variant={variant}
+          target={target}
+          rel="noreferrer"
+          download="curriculo.pdf"
+        >
+          {name}
+        </StyledLinkExternal>
+      );
+      break;
+
     case "InternalPrimary":
       return (
         <StyledLinkInternal to={to} variant={variant}>
