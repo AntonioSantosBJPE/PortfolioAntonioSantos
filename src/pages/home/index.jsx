@@ -1,42 +1,21 @@
 import {
   StyledContainerHome,
-  StyledProjects,
   StyledSkills,
   StyledABout,
   StyledContact,
 } from "./style";
 import { infosProjectsHomePage, infosSkills } from "../../services/dataBase.js";
-import { CardProject } from "../../components/CardProject";
 import { CardSkills } from "../../components/CardSkills";
 import { LinkNavigation } from "../../components/LinkNavigation";
 import { Footer } from "../../components/Footer";
 import { SectionInitialInfos } from "./SectionInitialInfos";
+import { SectionProjects } from "./SectionProjects";
 
 export const HomePage = () => {
   return (
     <StyledContainerHome>
       <SectionInitialInfos />
-      <StyledProjects>
-        <div>
-          <h2>
-            <span>#</span>Projetos
-          </h2>
-          <span></span>
-          {/* <Link to="/projects">{"Todos ~~>"}</Link> */}
-          <LinkNavigation
-            name={"Todos ~~>"}
-            to="/projects"
-            variant="InternalNoBoardGrey0"
-          />
-        </div>
-        <div>
-          <ul>
-            {infosProjectsHomePage.map((infos, index) => {
-              return <CardProject key={index} infos={infos} />;
-            })}
-          </ul>
-        </div>
-      </StyledProjects>
+      <SectionProjects />
 
       <StyledSkills>
         <div>
