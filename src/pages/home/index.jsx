@@ -1,42 +1,16 @@
-import {
-  StyledContainerHome,
-  StyledSkills,
-  StyledABout,
-  StyledContact,
-} from "./style";
-import { infosProjectsHomePage, infosSkills } from "../../services/dataBase.js";
-import { CardSkills } from "../../components/CardSkills";
+import { StyledContainerHome, StyledABout, StyledContact } from "./style";
 import { LinkNavigation } from "../../components/LinkNavigation";
 import { Footer } from "../../components/Footer";
 import { SectionInitialInfos } from "./SectionInitialInfos";
 import { SectionProjects } from "./SectionProjects";
+import { SectionSkills } from "./SectionSkills";
 
 export const HomePage = () => {
   return (
     <StyledContainerHome>
       <SectionInitialInfos />
       <SectionProjects />
-
-      <StyledSkills>
-        <div>
-          <h2>
-            <span>#</span>Habilidades
-          </h2>
-          <span></span>
-        </div>
-
-        <div>
-          <figure>
-            <img src="/geometricsSkills.svg" alt="" />
-          </figure>
-          <ul>
-            {infosSkills.map((infos, index) => {
-              return <CardSkills key={index} infos={infos} />;
-            })}
-          </ul>
-        </div>
-      </StyledSkills>
-
+      <SectionSkills />
       <StyledABout>
         <div>
           <h2>
