@@ -26,7 +26,7 @@ export const Header = () => {
   return (
     <>
       <StyledMenu isOpen={menuBurgerIsOpen}>
-        <img src={logo} alt="" />
+        <img src={logo} alt="logo Antonio Santos" />
         <nav>
           <LinkNavigation
             to="/"
@@ -49,13 +49,13 @@ export const Header = () => {
           >
             <span>#</span>Sobre
           </LinkNavigation>
-          <LinkNavigation
+          {/* <LinkNavigation
             to="/contact"
             variant="InternalNoBoardGrey1"
             onClick={closeMenu}
           >
             <span>#</span>Contato
-          </LinkNavigation>
+          </LinkNavigation> */}
         </nav>
         <Sling
           label="Show menu"

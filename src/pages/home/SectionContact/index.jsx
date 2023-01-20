@@ -3,7 +3,7 @@ import { StyledContact } from "./style";
 
 export const SectionContact = () => {
   return (
-    <StyledContact>
+    <StyledContact id="section__contact">
       <div>
         <h2>
           <span>#</span>Contato
@@ -19,9 +19,9 @@ export const SectionContact = () => {
             ou tenha alguma dúvida sobre mim, não hesite em entrar em contato!
           </p>
           <LinkNavigation
-            name="Entre em contato!"
-            to="/contact"
-            variant="InternalPrimary"
+            name="Baixar Currículo"
+            to="/public/curriculo.pdf"
+            variant="ExternalPrimaryDownload"
           />
         </div>
         <div>
