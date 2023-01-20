@@ -28,11 +28,11 @@ export const SectionContact = () => {
           <div>
             <h4>Entre em contato por:</h4>
             <span>
-              <img src="/public/github.png" alt="imagem email" />
+              {/* <img src="/public/github.png" alt="imagem email" /> */}
               <h5>netoifpe@gmail.com</h5>
             </span>
             <span>
-              <img src="/public/github.png" alt="imagem whatsapp" />
+              {/* <img src="/public/github.png" alt="imagem whatsapp" /> */}
               <h5>(81) 9 9359-0468</h5>
             </span>
           </div>
