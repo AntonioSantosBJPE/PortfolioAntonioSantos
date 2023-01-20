@@ -1,18 +1,6 @@
 import styled from "styled-components";
 
-export const StyledContainerProjects = styled.main`
-  width: 100%;
-  max-width: 1024px;
-  height: fit-content;
-
-  margin: 0 auto;
-
-  display: flex;
-  flex-direction: column;
-  gap: 50px;
-`;
-
-export const StyledPageProjects = styled.section`
+export const StyledProjects = styled.section`
   width: 100%;
   height: fit-content;
 
@@ -51,28 +39,12 @@ export const StyledPageProjects = styled.section`
     ul {
       width: 100%;
       display: flex;
-
       flex-direction: row;
-      flex-wrap: nowrap;
-      overflow-x: auto;
       gap: 25px;
 
+      overflow-x: auto;
+
       margin-top: 40px;
-
-      & > li {
-        min-width: 280px;
-        max-width: 280px;
-      }
-
-      @media (min-width: 768px) {
-        flex-wrap: wrap;
-        align-items: center;
-        justify-content: center;
-        & > li {
-          min-width: 300px;
-          max-width: 300px;
-        }
-      }
     }
   }
 `;
