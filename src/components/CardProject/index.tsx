@@ -5,7 +5,7 @@ interface IinfosProjects {
   name: string;
   tags: string[];
   imgCapa: string;
-  linkSite: string;
+  linkSite?: string;
   linkGithub: string;
   description: string;
 }
@@ -27,12 +27,14 @@ export const CardProject = ({ infos }: IcardProject) => {
         <p>{infos.description}</p>
       </div>
       <div>
-        <LinkNavigation
-          name={"Live <~>"}
-          to={infos.linkSite}
-          target="_blank"
-          variant={"ExternalPrimary"}
-        />
+        {infos.linkSite && (
+          <LinkNavigation
+            name={"Live <~>"}
+            to={infos.linkSite}
+            target="_blank"
+            variant={"ExternalPrimary"}
+          />
+        )}
         <LinkNavigation
           name={"GitHub >="}
           to={infos.linkGithub}
