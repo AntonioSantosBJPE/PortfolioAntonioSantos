@@ -40,6 +40,10 @@ export const infosSkills: IinfosSkilss[] = [
     ],
   },
   {
+    title: "Soft skills",
+    skills: ["VSCode", "Figma", "Git", "GitHub"],
+  },
+  {
     title: "Ferramentas",
     skills: ["VSCode", "Figma", "Git", "GitHub"],
   },

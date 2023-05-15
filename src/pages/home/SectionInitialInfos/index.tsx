@@ -12,7 +12,7 @@ export const SectionInitialInfos = () => {
           Bem-vindo ao meu site de portfólio! Sou um desenvolvedor full-stack
           com experiência em diversas tecnologias da web, como React,
           Typescript, CSS, HTML, Node e SQL e estou entusiasmado em compartilhar
-          com você meu conhecimento e projetos neste espaço..
+          com você meu conhecimento e projetos neste espaço.
         </h3>
         <LinkNavigation
           name="Entre em contato!"

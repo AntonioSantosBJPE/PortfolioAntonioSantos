@@ -17,24 +17,17 @@ export const SectionAbout = () => {
             Olá, meu nome é Antonio Santos!
             <br></br>
             <br></br>
-            Sou desenvolvedor Front-end , com boa experiência no desenvolvimento
-            de aplicações utilizando, React, TypeScript, JavaScript, HTML e CSS,
-            possuindo vivências em utilização de Metodologias ágeis, em especial
-            Scrum, como também em versionamento de projetos, utilizando Git.
+            Sou um desenvolvedor full-stack com experiência em diversas
+            tecnologias da web e estou entusiasmado em compartilhar com você meu
+            conhecimento e projetos neste espaço.
             <br></br>
             <br></br>
-            Atualmente sou monitor na Kenzie Academy Brasil e curso o módulo de
-            back-end do curso de Desenvolvimento Web Fullstack, da mesma
-            instituição, como também tenho buscado aprendizado e certificações
-            em outras instituições, como Freecodecamp, Rocketseat e W3schools,
-            procurando sempre aumentar a minha rede de conhecimento.
-            {/* <br></br>
-        <br></br>
-        Amo a área de tecnologia primeiro porque ela está presente em
-        quase tudo no nosso dia-a-dia, e por me permitir colocar em
-        prática meu amor e conhecimento de lógica. Meu objetivo na área é
-        tornar-se um profissional com alto nível de competências, capaz de
-        desenvolver sempre a melhor experiência para usuário final. */}
+            Com um sólido conjunto de habilidades, adquirido ao longo dos anos,
+            estou apto a trabalhar em todas as etapas do ciclo de
+            desenvolvimento de software. Desde o front-end até o back-end, estou
+            familiarizado com uma ampla gama de tecnologias modernas e práticas
+            recomendadas para criar aplicativos da web robustos e de alta
+            qualidade.
           </p>
           <LinkNavigation
             name="Mais informações <~>"
