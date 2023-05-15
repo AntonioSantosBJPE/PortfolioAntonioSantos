@@ -1,7 +1,6 @@
 import { Outlet } from "react-router-dom";
 import { StyledMenu, StyledContainerOutlat } from "./style";
 import { Sling } from "hamburger-react";
-import logo from "../../assets/logo.svg";
 import { useState, useEffect } from "react";
 import { LinkNavigation } from "../LinkNavigation";
 
@@ -26,7 +25,7 @@ export const Header = () => {
   return (
     <>
       <StyledMenu isOpen={menuBurgerIsOpen}>
-        <img src={logo} alt="logo Antonio Santos" />
+        <img src="/logo.svg" alt="logo Antonio Santos" />
         <nav>
           <LinkNavigation
             to="/"

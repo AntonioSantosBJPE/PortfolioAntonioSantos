@@ -67,7 +67,7 @@ export const StyledContact = styled.section`
 
       div:nth-child(1) {
         width: 240px;
-        height: 140px;
+        height: 200px;
 
         display: flex;
         flex-direction: column;

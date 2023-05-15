@@ -1,6 +1,14 @@
 import { StyledCardSkills } from "./style";
 
-export const CardSkills = ({ infos }) => {
+export interface IinfosSkilss {
+  title: string;
+  skills: string[];
+}
+interface IcardSkills {
+  infos: IinfosSkilss;
+}
+
+export const CardSkills = ({ infos }: IcardSkills) => {
   return (
     <StyledCardSkills>
       <div>

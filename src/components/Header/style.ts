@@ -1,6 +1,10 @@
 import styled from "styled-components";
 
-export const StyledMenu = styled.header`
+export interface iStyledMenu {
+  isOpen: boolean;
+}
+
+export const StyledMenu = styled.header<iStyledMenu>`
   width: 100%;
   max-width: 1024px;
   height: 10vh;

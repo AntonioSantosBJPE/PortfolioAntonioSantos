@@ -1,7 +1,19 @@
 import { LinkNavigation } from "../LinkNavigation";
 import { StyleCard } from "./style";
 
-export const CardProject = ({ infos }) => {
+interface IinfosProjects {
+  name: string;
+  tags: string[];
+  imgCapa: string;
+  linkSite?: string;
+  linkGithub: string;
+  description: string;
+}
+interface IcardProject {
+  infos: IinfosProjects;
+}
+
+export const CardProject = ({ infos }: IcardProject) => {
   return (
     <StyleCard>
       <figure>
@@ -15,12 +27,14 @@ export const CardProject = ({ infos }) => {
         <p>{infos.description}</p>
       </div>
       <div>
-        <LinkNavigation
-          name={"Live <~>"}
-          to={infos.linkSite}
-          target="_blank"
-          variant={"ExternalPrimary"}
-        />
+        {infos.linkSite && (
+          <LinkNavigation
+            name={"Live <~>"}
+            to={infos.linkSite}
+            target="_blank"
+            variant={"ExternalPrimary"}
+          />
+        )}
         <LinkNavigation
           name={"GitHub >="}
           to={infos.linkGithub}
