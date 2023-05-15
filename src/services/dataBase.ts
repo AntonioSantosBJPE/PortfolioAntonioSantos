@@ -1,4 +1,18 @@
-export const infosProjectsHomePage = [
+export interface IinfosProjects {
+  name: string;
+  tags: string[];
+  imgCapa: string;
+  linkSite: string;
+  linkGithub: string;
+  description: string;
+}
+
+export interface IinfosSkilss {
+  title: string;
+  skills: string[];
+}
+
+export const infosProjectsHomePage: IinfosProjects[] = [
   {
     name: "Close Worker",
     tags: ["ReactJs", "Styled-components", "HTML", "API"],
@@ -30,7 +44,7 @@ export const infosProjectsHomePage = [
   },
 ];
 
-export const infosSkills = [
+export const infosSkills: IinfosSkilss[] = [
   {
     title: "Linguagens",
     skills: ["JavaScript", "TypeScript"],
@@ -49,7 +63,7 @@ export const infosSkills = [
   },
 ];
 
-export const infosProjectsPageProjects = [
+export const infosProjectsPageProjects: IinfosProjects[] = [
   {
     name: "Close Worker",
     tags: ["ReactJs", "Styled-components", "HTML", "API"],

@@ -1,4 +1,21 @@
+import { ReactNode } from "react";
 import { StyledLinkExternal, StyledLinkInternal } from "./style";
+
+interface iLinkNavigation {
+  to: string;
+  name?: string;
+  variant:
+    | "ExternalPrimary"
+    | "ExternalGray1"
+    | "ExternalIcon"
+    | "ExternalPrimaryDownload"
+    | "InternalPrimary"
+    | "InternalNoBoardGrey0"
+    | "InternalNoBoardGrey1";
+  target?: any;
+  children?: ReactNode;
+  onClick?: any;
+}
 
 export const LinkNavigation = ({
   variant,
@@ -7,7 +24,7 @@ export const LinkNavigation = ({
   target,
   children,
   onClick,
-}) => {
+}: iLinkNavigation) => {
   switch (variant) {
     case "ExternalPrimary":
       return (

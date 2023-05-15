@@ -1,7 +1,19 @@
 import { LinkNavigation } from "../LinkNavigation";
 import { StyleCard } from "./style";
 
-export const CardProject = ({ infos }) => {
+interface IinfosProjects {
+  name: string;
+  tags: string[];
+  imgCapa: string;
+  linkSite: string;
+  linkGithub: string;
+  description: string;
+}
+interface IcardProject {
+  infos: IinfosProjects;
+}
+
+export const CardProject = ({ infos }: IcardProject) => {
   return (
     <StyleCard>
       <figure>

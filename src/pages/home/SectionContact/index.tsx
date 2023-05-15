@@ -20,7 +20,7 @@ export const SectionContact = () => {
           </p>
           <LinkNavigation
             name="Baixar Currículo"
-            to="/public/curriculo.pdf"
+            to="/curriculo.pdf"
             variant="ExternalPrimaryDownload"
           />
         </div>
@@ -28,11 +28,11 @@ export const SectionContact = () => {
           <div>
             <h4>Entre em contato por:</h4>
             <span>
-              <img src="/public/contact.png" alt="imagem email" />
+              <img src="/contact.png" alt="imagem email" />
               <h5>netoifpe@gmail.com</h5>
             </span>
             <span>
-              <img src="/public/zap.png" alt="imagem whatsapp" />
+              <img src="/zap.png" alt="imagem whatsapp" />
               <h5>(81) 9 9359-0468</h5>
             </span>
           </div>

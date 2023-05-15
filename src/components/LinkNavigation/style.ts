@@ -1,7 +1,18 @@
 import styled from "styled-components";
 import { Link } from "react-router-dom";
 
-export const StyledLinkExternal = styled.a`
+export interface iPropsLink {
+  variant:
+    | "ExternalPrimary"
+    | "ExternalGray1"
+    | "ExternalIcon"
+    | "ExternalPrimaryDownload"
+    | "InternalPrimary"
+    | "InternalNoBoardGrey0"
+    | "InternalNoBoardGrey1";
+}
+
+export const StyledLinkExternal = styled.a<iPropsLink>`
   height: 40px;
   padding: 8px 16px;
 
@@ -61,7 +72,7 @@ export const StyledLinkExternal = styled.a`
   }}
 `;
 
-export const StyledLinkInternal = styled(Link)`
+export const StyledLinkInternal = styled(Link)<iPropsLink>`
   height: 40px;
   padding: 8px 16px;
 
