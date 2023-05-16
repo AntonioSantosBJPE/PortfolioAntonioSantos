@@ -84,12 +84,11 @@ export const infosProjectsPageProjects: IinfosProjects[] = [
     imgCapa: "/developed-market-api.png",
     linkGithub: "https://github.com/AntonioSantosBJPE/newsApi",
     description: `Developed Market API é uma API RESTFul desenvolvida em pyhton,
-     com django, cujo principal objetivo é sustentar a plataforma de e-commerce,
-      com mesmo nome. Possuindo três níveis de acesso e permissão 
-      (Admin, Seller e Client), a aplicação permite criar e atualizar usuários,
-       criar produtos e movimentar seu estoque, adicionar produtos a um carrinho
-        de compras e realizar pedidos. Também é possivel listar pedidos realizados
-         ou vendidos e gerar relatórios de vendas em pdf.`,
+      com django, possuindo três níveis de acesso e permissão, a aplicação permite
+      criar e atualizar usuários, criar produtos e movimentar seu estoque, 
+      adicionar produtos a um carrinho de compras e realizar pedidos. Também 
+      é possivel listar pedidos realizados ou vendidos e gerar relatórios de 
+      vendas em pdf.`,
   },
   {
     name: "Kenzie Hub",
