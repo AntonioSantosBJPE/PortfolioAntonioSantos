@@ -2,14 +2,20 @@ import styled from "styled-components";
 
 export const StyleCard = styled.li`
   width: 100%;
-  min-width: 300px;
-  max-width: 330px;
+  min-width: 240px;
+  max-width: 280px;
   height: fit-content;
 
   border: 1px solid var(--color-gray-1);
 
   display: flex;
   flex-direction: column;
+
+  @media (min-width: 350px) {
+    width: 100%;
+    min-width: 280px;
+    max-width: 330px;
+  }
 
   &:hover {
     border: 1px solid var(--color-primary);

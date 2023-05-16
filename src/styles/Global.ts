@@ -31,7 +31,7 @@ export const GlobalStyle = createGlobalStyle`
   --color-negative: #E60000;
   --color-warning: #FFCD07;
   --color-information: #155BCB;
-
+  --swiper-theme-color:#C778DD;
 }
 
 body{

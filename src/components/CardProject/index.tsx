@@ -29,14 +29,14 @@ export const CardProject = ({ infos }: IcardProject) => {
       <div>
         {infos.linkSite && (
           <LinkNavigation
-            name={"Live <~>"}
+            name={"Live"}
             to={infos.linkSite}
             target="_blank"
             variant={"ExternalPrimary"}
           />
         )}
         <LinkNavigation
-          name={"GitHub >="}
+          name={"GitHub"}
           to={infos.linkGithub}
           target="_blank"
           variant={"ExternalGray1"}
