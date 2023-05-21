@@ -1,22 +1,12 @@
 import { LinkNavigation } from "../../../components/LinkNavigation";
 import { StyledABout } from "./style";
-import { motion } from "framer-motion";
+import { TitlesSectionsAnimations } from "../../../components/Animations/TitlesSectionsAnimations";
 
 export const SectionAbout = () => {
   return (
     <StyledABout>
       <div>
-        <motion.h2
-          initial={{ x: -100, opacity: 0 }}
-          animate={{ x: 0, opacity: 1 }}
-          transition={{ duration: 1.5, type: "spring", stiffness: 50 }}
-          whileHover={{ scale: 1.1 }}
-          whileTap={{ scale: 0.95 }}
-          style={{ position: "relative" }}
-        >
-          <span>#</span>Sobre Mim
-        </motion.h2>
-
+        <TitlesSectionsAnimations title="Sobre Mim" />
         <span></span>
       </div>
 

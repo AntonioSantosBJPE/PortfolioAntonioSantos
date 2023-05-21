@@ -1,6 +1,6 @@
 import { LinkNavigation } from "../../../components/LinkNavigation";
 import { StyledContact } from "./style";
-import { motion } from "framer-motion";
+import { TitlesSectionsAnimations } from "../../../components/Animations/TitlesSectionsAnimations";
 
 export const SectionContact = () => {
   const whatsNumber = (phoneNumber: string) =>
@@ -9,17 +9,7 @@ export const SectionContact = () => {
   return (
     <StyledContact id="section__contact">
       <div>
-        <motion.h2
-          initial={{ x: -100, opacity: 0 }}
-          animate={{ x: 0, opacity: 1 }}
-          transition={{ duration: 1.5, type: "spring", stiffness: 50 }}
-          whileHover={{ scale: 1.1 }}
-          whileTap={{ scale: 0.95 }}
-          style={{ position: "relative" }}
-        >
-          <span>#</span>Contato
-        </motion.h2>
-
+        <TitlesSectionsAnimations title="Contato" />
         <span></span>
       </div>
 
