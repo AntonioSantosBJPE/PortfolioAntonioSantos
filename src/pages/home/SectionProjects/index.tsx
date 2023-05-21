@@ -10,13 +10,13 @@ import "swiper/css/pagination";
 import "./styles.css";
 import { EffectCoverflow, Pagination } from "swiper";
 
+import { TitlesSectionsAnimations } from "../../../components/Animations/TitlesSectionsAnimations";
+
 export const SectionProjects = () => {
   return (
     <StyledProjects>
       <div>
-        <h2>
-          <span>#</span>Projetos
-        </h2>
+        <TitlesSectionsAnimations title="Projetos" />
         <span></span>
         <LinkNavigation
           name={"Todos ~~>"}

@@ -1,5 +1,25 @@
 import styled from "styled-components";
 
+export const containerTransition = {
+  hidden: { opacity: 1, scale: 0 },
+  visible: {
+    opacity: 1,
+    scale: 1,
+    transition: {
+      delayChildren: 0.2,
+      staggerChildren: 0.2,
+    },
+  },
+};
+
+export const variantTransition = {
+  hidden: { y: 20, opacity: 0 },
+  visible: {
+    y: 0,
+    opacity: 1,
+  },
+};
+
 export const StyledContainerAbout = styled.main`
   width: 100%;
   max-width: 1024px;

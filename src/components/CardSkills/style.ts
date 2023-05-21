@@ -1,6 +1,15 @@
 import styled from "styled-components";
+import { motion } from "framer-motion";
 
-export const StyledCardSkills = styled.li`
+export const variantLi = {
+  hidden: { y: 20, opacity: 0 },
+  visible: {
+    y: 0,
+    opacity: 1,
+  },
+};
+
+export const StyledCardSkills = styled(motion.li)`
   min-width: 170px;
   max-width: 200px;
   height: fit-content;

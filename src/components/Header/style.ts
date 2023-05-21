@@ -35,7 +35,7 @@ export const StyledMenu = styled.header<iStyledMenu>`
     justify-content: space-around;
 
     width: 100%;
-    height: 90vh;
+    height: 100vh;
     background-color: var(--color-gray-2);
 
     position: absolute;
@@ -50,7 +50,7 @@ export const StyledMenu = styled.header<iStyledMenu>`
       if (isOpen) {
         return "translateY(0)";
       } else {
-        return "translateY(-1000px)";
+        return "translateY(-2000px)";
       }
     }};
   }

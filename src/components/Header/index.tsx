@@ -3,6 +3,7 @@ import { StyledMenu, StyledContainerOutlat } from "./style";
 import { Sling } from "hamburger-react";
 import { useState, useEffect } from "react";
 import { LinkNavigation } from "../LinkNavigation";
+import { motion } from "framer-motion";
 
 export const Header = () => {
   const [menuBurgerIsOpen, setMenuBurgerIsOpen] = useState(false);
@@ -25,7 +26,17 @@ export const Header = () => {
   return (
     <>
       <StyledMenu isOpen={menuBurgerIsOpen}>
-        <img src="/logo.svg" alt="logo Antonio Santos" />
+        <motion.img
+          src="/logo.svg"
+          alt="Logo"
+          initial={{ x: -100, opacity: 0 }}
+          animate={{ x: 0, opacity: 1 }}
+          transition={{ duration: 1.5, type: "spring", stiffness: 50 }}
+          whileHover={{ scale: 1.1 }}
+          whileTap={{ scale: 0.95 }}
+          style={{ position: "relative" }}
+        />
+
         <nav>
           <LinkNavigation
             to="/"

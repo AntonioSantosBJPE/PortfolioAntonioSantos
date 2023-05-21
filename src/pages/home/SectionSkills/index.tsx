@@ -1,15 +1,16 @@
 import { CardSkills } from "../../../components/CardSkills";
 import { infosSkills } from "../../../services/dataBase";
 import { StyledSkills } from "./style";
+import { TitlesSectionsAnimations } from "../../../components/Animations/TitlesSectionsAnimations";
+import { motion } from "framer-motion";
+import { containerTransition } from "../../about/style";
 
 export const SectionSkills = () => {
   return (
     <>
       <StyledSkills>
         <div>
-          <h2>
-            <span>#</span>Habilidades
-          </h2>
+          <TitlesSectionsAnimations title="Habilidades" />
           <span></span>
         </div>
 
@@ -17,11 +18,15 @@ export const SectionSkills = () => {
           <figure>
             <img src="/geometricsSkills.svg" alt="" />
           </figure>
-          <ul>
+          <motion.ul
+            variants={containerTransition}
+            initial="hidden"
+            animate="visible"
+          >
             {infosSkills.map((infos, index) => {
               return <CardSkills key={index} infos={infos} />;
             })}
-          </ul>
+          </motion.ul>
         </div>
       </StyledSkills>
     </>
