@@ -1,13 +1,22 @@
 import { LinkNavigation } from "../../../components/LinkNavigation";
 import { StyledABout } from "./style";
+import { motion } from "framer-motion";
 
 export const SectionAbout = () => {
   return (
     <StyledABout>
       <div>
-        <h2>
+        <motion.h2
+          initial={{ x: -100, opacity: 0 }}
+          animate={{ x: 0, opacity: 1 }}
+          transition={{ duration: 1.5, type: "spring", stiffness: 50 }}
+          whileHover={{ scale: 1.1 }}
+          whileTap={{ scale: 0.95 }}
+          style={{ position: "relative" }}
+        >
           <span>#</span>Sobre Mim
-        </h2>
+        </motion.h2>
+
         <span></span>
       </div>
 
