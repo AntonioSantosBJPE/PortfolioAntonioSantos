@@ -1,13 +1,12 @@
 import { LinkNavigation } from "../../../components/LinkNavigation";
 import { StyledABout } from "./style";
+import { TitlesSectionsAnimations } from "../../../components/Animations/TitlesSectionsAnimations";
 
 export const SectionAbout = () => {
   return (
     <StyledABout>
       <div>
-        <h2>
-          <span>#</span>Sobre Mim
-        </h2>
+        <TitlesSectionsAnimations title="Sobre Mim" />
         <span></span>
       </div>
 

@@ -19,6 +19,7 @@ export const StyledLinkExternal = styled.a<iPropsLink>`
   font-weight: 500;
   font-size: 16px;
   line-height: 21px;
+  transition: 500ms linear;
 
   ${({ variant }) => {
     if (variant === "ExternalPrimary") {
@@ -28,6 +29,7 @@ export const StyledLinkExternal = styled.a<iPropsLink>`
 
             &:hover {
                 background-color: var(--color-primary-hover);
+                transform: scale(1.1);
             }
           
           `;
@@ -40,6 +42,7 @@ export const StyledLinkExternal = styled.a<iPropsLink>`
 
             &:hover {
                 background-color: var(--color-gray-1-hover);
+                transform: scale(1.1);
             }
           
           `;
@@ -55,6 +58,7 @@ export const StyledLinkExternal = styled.a<iPropsLink>`
               height: 100%;
               width: 100%;
             }
+            
           `;
     }
 
@@ -65,6 +69,7 @@ export const StyledLinkExternal = styled.a<iPropsLink>`
 
             &:hover {
                 background-color: var(--color-primary-hover);
+                transform: scale(1.1);
             }
           
           `;
@@ -80,6 +85,7 @@ export const StyledLinkInternal = styled(Link)<iPropsLink>`
   font-size: 16px;
   line-height: 21px;
 
+  transition: 500ms linear;
   ${({ variant }) => {
     if (variant === "InternalPrimary") {
       return `
@@ -88,6 +94,7 @@ export const StyledLinkInternal = styled(Link)<iPropsLink>`
 
             &:hover {
                 background-color: var(--color-primary-hover);
+                transform: scale(1.1);
             }
           
           `;
@@ -101,6 +108,7 @@ export const StyledLinkInternal = styled(Link)<iPropsLink>`
         
             &:hover {
                 color: var(--color-gray-1);
+                transform: scale(1.1);
             }
           
           `;
@@ -117,6 +125,7 @@ export const StyledLinkInternal = styled(Link)<iPropsLink>`
             transition: all 1s ease-in-out;
             &:hover {
                 color: var(--color-gray-0);
+                transform: scale(1.1);
             }
             span {
                 color: var(--color-primary);

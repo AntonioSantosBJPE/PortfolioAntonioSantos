@@ -12,6 +12,20 @@ export interface IinfosSkilss {
   skills: string[];
 }
 
+export interface IpersonalInfos {
+  email: string;
+  phone: string;
+  linkedin: string;
+  github: string;
+}
+
+export const personalInfos: IpersonalInfos = {
+  email: "netoifpe@gmail.com",
+  phone: "(81) 9 9359-0468",
+  linkedin: "https://www.linkedin.com/in/antonio-santos-bjpe/",
+  github: "https://github.com/AntonioSantosBJPE",
+};
+
 export const infosSkills: IinfosSkilss[] = [
   {
     title: "Linguagens",
@@ -140,7 +154,5 @@ export const infosProjectsPageProjects: IinfosProjects[] = [
 ];
 
 export const infosProjectsHomePage: IinfosProjects[] = [
-  infosProjectsPageProjects[0],
-  infosProjectsPageProjects[1],
-  infosProjectsPageProjects[2],
+  ...infosProjectsPageProjects,
 ];
