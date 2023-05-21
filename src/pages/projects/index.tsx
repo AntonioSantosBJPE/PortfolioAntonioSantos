@@ -10,6 +10,7 @@ import "swiper/css/pagination";
 import "./styles.module.css";
 import { EffectCoverflow, Pagination } from "swiper";
 import { PageTransitions } from "../../components/Animations/PageTransitions";
+import { TitlesSectionsAnimations } from "../../components/Animations/TitlesSectionsAnimations";
 
 export const ProjectsPage = () => {
   return (
@@ -17,9 +18,7 @@ export const ProjectsPage = () => {
       <StyledContainerProjects>
         <StyledPageProjects>
           <div>
-            <h2>
-              <span>/</span>Projetos
-            </h2>
+            <TitlesSectionsAnimations title="Projetos" />
           </div>
 
           <Swiper

@@ -1,4 +1,4 @@
-import { StyledCardSkills } from "./style";
+import { StyledCardSkills, variantLi } from "./style";
 
 export interface IinfosSkilss {
   title: string;
@@ -10,7 +10,7 @@ interface IcardSkills {
 
 export const CardSkills = ({ infos }: IcardSkills) => {
   return (
-    <StyledCardSkills>
+    <StyledCardSkills variants={variantLi}>
       <div>
         <h3>{infos.title}</h3>
       </div>
