@@ -29,7 +29,7 @@ export const personalInfos: IpersonalInfos = {
 export const infosSkills: IinfosSkilss[] = [
   {
     title: "Linguagens",
-    skills: ["JavaScript", "TypeScript", "Python"],
+    skills: ["JavaScript", "TypeScript", "Python", "PHP"],
   },
   {
     title: "Bibliotecas",
@@ -46,11 +46,15 @@ export const infosSkills: IinfosSkilss[] = [
       "HTML",
       "CSS",
       "Styled-components",
+      "Tailwind",
+      "Sass",
       "SQL",
       "Postgres",
+      "MongoDB",
       "TypeORM",
       "Prisma",
       "Jest",
+      "AWS",
     ],
   },
   {
@@ -64,6 +68,26 @@ export const infosSkills: IinfosSkilss[] = [
 ];
 
 export const infosProjectsPageProjects: IinfosProjects[] = [
+  {
+    name: "Contacts-Book",
+    tags: ["NextJs", "Tailwind", "NodeJs", "Express", "Prisma", "Postgres"],
+    imgCapa:
+      "https://camo.githubusercontent.com/e1e0df77be067971ed603de2db4ca253b876bef24b06871076e1e26b3be74307/68747470733a2f2f692e696d6775722e636f6d2f6e7044514766582e706e67",
+    linkSite: "https://motor-shop-front-lac.vercel.app/",
+    linkGithub: "https://github.com/AntonioSantosBJPE/motor-shop-front",
+    description:
+      "Motors Shop é uma aplicação para compra e venda de veículos, permitindo que os usuários se cadastrem como clientes ou anunciantes, façam login na aplicação, atualizem suas informações de perfil e gerenciem sua lista de anúncios.",
+  },
+  {
+    name: "Contacts-Book",
+    tags: ["NextJs", "Sass", "NodeJs", "Express"],
+    imgCapa:
+      "https://camo.githubusercontent.com/a1228f76f185eba7ae903aaec622e5ba6d5c553fcc88d12630741ec1450f94ad/68747470733a2f2f692e6962622e636f2f6d386e674658392f686f6d652d706167652d636f6e74616374732d626f6f6b2e706e67",
+    linkSite: "https://contacts-books-pi.vercel.app/",
+    linkGithub: "https://github.com/AntonioSantosBJPE/contacts-books-fullstack",
+    description:
+      "Contacts-book é uma aplicação para gerenciar sua agenda de contatos, permitindo que os usuários se cadastrem como clientes, façam login na aplicação, atualizem suas informações de perfil e gerenciem sua lista de contatos. Os usuários podem criar, atualizar, excluir e listar todos os seus contatos criados.",
+  },
   {
     name: "Close Worker",
     tags: ["ReactJs", "Styled-components", "HTML", "API"],
